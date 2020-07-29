@@ -1,0 +1,13 @@
+# Assembler debug file for MCU 8051 IDE v1.4.7
+# Used assembler: MCU 8051 IDE
+# Date: 08/05/2014
+02E963FE5D4D807443CCEC90EC0358AB "C:/Documents and Settings/usuario/desktop/Lab01/des1.asm" 
+0 2 256 120 32
+0 3 258 232
+0 4 259 117 208 8
+0 5 262 248
+0 6 263 117 208 16
+0 7 266 248
+0 8 267 117 208 24
+0 9 270 248
+0 10 271 136 240

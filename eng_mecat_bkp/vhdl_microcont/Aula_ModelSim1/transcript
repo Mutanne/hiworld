@@ -1,0 +1,562 @@
+# Reading C:/altera/10.1/modelsim_ase/tcl/vsim/pref.tcl 
+# OpenFile {C:/Documents and Settings/usuario/Desktop/Aula_ModelSim1/cont32.vhd} 
+vlib 1cont
+vmap 1cont 1cont
+# Copying C:\altera\10.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\10.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+vcom -reportprogress 300 -work 1cont {C:/Documents and Settings/usuario/Desktop/Aula_ModelSim1/tcont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity tcont32
+# ** Error: C:/Documents and Settings/usuario/Desktop/Aula_ModelSim1/tcont32.vhd(6): near ")": expecting "IDENTIFIER"
+vcom -reportprogress 300 -work 1cont {C:/Documents and Settings/usuario/Desktop/Aula_ModelSim1/cont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity cont32
+# -- Compiling architecture acont32 of cont32
+# ** Error: C:/Documents and Settings/usuario/Desktop/Aula_ModelSim1/cont32.vhd(13): near "in": expecting "STRING" or "IDENTIFIER" or "<<" or '('
+# ** Error: C:/Documents and Settings/usuario/Desktop/Aula_ModelSim1/cont32.vhd(17): near "out": expecting "STRING" or "IDENTIFIER" or "<<" or '('
+# ** Error: C:/Documents and Settings/usuario/Desktop/Aula_ModelSim1/cont32.vhd(22): (vcom-1136) Unknown identifier "v_saida".
+# ** Error: C:/Documents and Settings/usuario/Desktop/Aula_ModelSim1/cont32.vhd(22): (vcom-1136) Unknown identifier "s_inic".
+# ** Error: C:/Documents and Settings/usuario/Desktop/Aula_ModelSim1/cont32.vhd(24): (vcom-1136) Unknown identifier "v_saida".
+# ** Error: C:/Documents and Settings/usuario/Desktop/Aula_ModelSim1/cont32.vhd(25): near "end": expecting ';'
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity cont32
+# -- Compiling architecture acont32 of cont32
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(13): near "<=": expecting ':'
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(17): near ":=": expecting ':'
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(22): (vcom-1136) Unknown identifier "v_saida".
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(22): (vcom-1136) Unknown identifier "s_inic".
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(24): (vcom-1136) Unknown identifier "v_saida".
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(25): near "end": expecting ';'
+# C:/altera/10.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity cont32
+# -- Compiling architecture acont32 of cont32
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(13): near "in": expecting "STRING" or "IDENTIFIER" or "<<" or '('
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(17): near "out": expecting "STRING" or "IDENTIFIER" or "<<" or '('
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(22): (vcom-1136) Unknown identifier "v_saida".
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(22): (vcom-1136) Unknown identifier "s_inic".
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(24): (vcom-1136) Unknown identifier "v_saida".
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(25): near "end": expecting ';'
+# C:/altera/10.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity cont32
+# -- Compiling architecture acont32 of cont32
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(25): No feasible entries for infix operator "+".
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(25): near "end": expecting ';'
+# C:/altera/10.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity cont32
+# -- Compiling architecture acont32 of cont32
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(24): No feasible entries for infix operator "+".
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(24): Bad right hand side (infix expression) in variable assignment.
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(28): VHDL Compiler exiting
+# C:/altera/10.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity cont32
+# -- Compiling architecture acont32 of cont32
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(24): No feasible entries for infix operator "+".
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(24): Bad right hand side (infix expression) in variable assignment.
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(28): VHDL Compiler exiting
+# C:/altera/10.1/modelsim_ase/win32aloem/vcom failed.
+dataset reload -f
+# wrong number of args for "dataset info".
+# Usage: dataset info <option> <dataset_name>
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity cont32
+# -- Compiling architecture acont32 of cont32
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(24): No feasible entries for infix operator "+".
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(24): Bad right hand side (infix expression) in variable assignment.
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(28): VHDL Compiler exiting
+# C:/altera/10.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity cont32
+# -- Compiling architecture acont32 of cont32
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(24): No feasible entries for infix operator "+".
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(24): Bad right hand side (infix expression) in variable assignment.
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(28): VHDL Compiler exiting
+# C:/altera/10.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity cont32
+# -- Compiling architecture acont32 of cont32
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(24): No feasible entries for infix operator "+".
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(24): Bad right hand side (infix expression) in variable assignment.
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(28): VHDL Compiler exiting
+# C:/altera/10.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity cont32
+# -- Compiling architecture acont32 of cont32
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(24): (vcom-1136) Unknown identifier "increment".
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(28): VHDL Compiler exiting
+# C:/altera/10.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity cont32
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(7): near "0": expecting "IDENTIFIER" or "RANGE" or "SUBTYPE"
+# C:/altera/10.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity cont32
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(7): near "=": expecting ';' or ')'
+# C:/altera/10.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity cont32
+# -- Compiling architecture acont32 of cont32
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(24): (vcom-1136) Unknown identifier "increment".
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(28): VHDL Compiler exiting
+# C:/altera/10.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity cont32
+# -- Compiling architecture acont32 of cont32
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(24): near "after": expecting ';'
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(28): VHDL Compiler exiting
+# C:/altera/10.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity cont32
+# -- Compiling architecture acont32 of cont32
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(22): Signal "s_saida" cannot be target of variable assignment statement.
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(24): No feasible entries for infix operator "+".
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(24): Signal "s_saida" cannot be target of variable assignment statement.
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(24): Bad right hand side (infix expression) in variable assignment.
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(17): Signal declaration 's_saida' not allowed in this region.
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(29): VHDL Compiler exiting
+# C:/altera/10.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity cont32
+# -- Compiling architecture acont32 of cont32
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(24): No feasible entries for infix operator "+".
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(24): Type error resolving infix expression "+" as type std.standard.bit_vector.
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(17): Signal declaration 's_saida' not allowed in this region.
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(29): VHDL Compiler exiting
+# C:/altera/10.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity cont32
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(11): near "signal": syntax error
+# C:/altera/10.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity cont32
+# -- Compiling architecture acont32 of cont32
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(22): No feasible entries for infix operator "+".
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(22): Type error resolving infix expression "+" as type std.standard.bit_vector.
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(27): VHDL Compiler exiting
+# C:/altera/10.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity cont32
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(11): near "signal": syntax error
+# C:/altera/10.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity cont32
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(13): near "signal": syntax error
+# C:/altera/10.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity cont32
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(13): near "signal": syntax error
+# C:/altera/10.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity cont32
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(14): near "signal": syntax error
+# C:/altera/10.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity cont32
+# -- Compiling architecture acont32 of cont32
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(24): No feasible entries for infix operator "+".
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(24): Type error resolving infix expression "+" as type std.standard.bit_vector.
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(24): Cannot read output "saida".
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(29): VHDL Compiler exiting
+# C:/altera/10.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity cont32
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(13): near "signal": syntax error
+# C:/altera/10.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity cont32
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(13): near "signal": syntax error
+# C:/altera/10.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity cont32
+# -- Compiling architecture acont32 of cont32
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(24): No feasible entries for infix operator "+".
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(24): Type error resolving infix expression "+" as type ieee.std_logic_1164.std_logic_vector.
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(29): VHDL Compiler exiting
+# C:/altera/10.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity cont32
+# -- Compiling architecture acont32 of cont32
+vcom -reportprogress 300 -work 1cont {C:/Documents and Settings/usuario/Desktop/Aula_ModelSim1/tcont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity tcont32
+# ** Error: C:/Documents and Settings/usuario/Desktop/Aula_ModelSim1/tcont32.vhd(6): near ")": expecting "IDENTIFIER"
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity cont32
+# -- Compiling architecture acont32 of cont32
+vcom -reportprogress 300 -work 1cont {C:/Documents and Settings/usuario/Desktop/Aula_ModelSim1/tcont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity tcont32
+# -- Compiling architecture atcont32 of tcont32
+# ** Error: C:/Documents and Settings/usuario/Desktop/Aula_ModelSim1/tcont32.vhd(11): near "ck": expecting "END"
+vcom -reportprogress 300 -work 1cont {C:/Documents and Settings/usuario/Desktop/Aula_ModelSim1/tcont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity tcont32
+# -- Compiling architecture atcont32 of tcont32
+# ** Error: C:/Documents and Settings/usuario/Desktop/Aula_ModelSim1/tcont32.vhd(12): near "0": expecting "IDENTIFIER" or "RANGE" or "SUBTYPE"
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/tcont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity tcont32
+# -- Compiling architecture atcont32 of tcont32
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/tcont32.vhd(16): near ")": expecting "IDENTIFIER"
+# C:/altera/10.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/tcont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity tcont32
+# -- Compiling architecture atcont32 of tcont32
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/tcont32.vhd(22): near "dutcont32": expecting "BEGIN"
+# C:/altera/10.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/tcont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity tcont32
+# -- Compiling architecture atcont32 of tcont32
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/tcont32.vhd(22): near "dut": expecting "BEGIN"
+# C:/altera/10.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/tcont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity tcont32
+# -- Compiling architecture atcont32 of tcont32
+# ** Warning: [4] C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/tcont32.vhd(30): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/tcont32.vhd(38): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/tcont32.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/tcont32.vhd(48): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/tcont32.vhd(53): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/tcont32.vhd(58): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/tcont32.vhd(61): near "EOF": syntax error
+# C:/altera/10.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/tcont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity tcont32
+# -- Compiling architecture atcont32 of tcont32
+# ** Warning: [4] C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/tcont32.vhd(30): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/tcont32.vhd(38): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/tcont32.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/tcont32.vhd(48): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/tcont32.vhd(53): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/tcont32.vhd(58): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/tcont32.vhd(60): near "EOF": syntax error
+# C:/altera/10.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/tcont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity tcont32
+# -- Compiling architecture atcont32 of tcont32
+# ** Warning: [4] C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/tcont32.vhd(30): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/tcont32.vhd(38): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/tcont32.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/tcont32.vhd(48): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/tcont32.vhd(53): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/tcont32.vhd(58): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/tcont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity tcont32
+# -- Compiling architecture atcont32 of tcont32
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity cont32
+# -- Compiling architecture acont32 of cont32
+vsim -voptargs=+acc 1cont.tcont32
+# vsim -voptargs=+acc 1cont.tcont32 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading 1cont.tcont32(atcont32)
+# Loading 1cont.cont32(acont32)
+add wave sim:/tcont32/*
+quit -sim
+vsim -voptargs=+acc 1cont.tcont32
+# vsim -voptargs=+acc 1cont.tcont32 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading 1cont.tcont32(atcont32)
+# Loading 1cont.cont32(acont32)
+add wave sim:/tcont32/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run -continue
+quit -sim
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/tcont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity tcont32
+# -- Compiling architecture atcont32 of tcont32
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity cont32
+# -- Compiling architecture acont32 of cont32
+vsim -voptargs=+acc 1cont.tcont32
+# vsim -voptargs=+acc 1cont.tcont32 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading 1cont.tcont32(atcont32)
+# Loading 1cont.cont32(acont32)
+add wave -r sim:/tcont32/*
+run
+run
+quit -sim
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity cont32
+# -- Compiling architecture acont32 of cont32
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(23): No feasible entries for infix operator "+".
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(23): Type error resolving infix expression "+" as type std.standard.bit_vector.
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(28): VHDL Compiler exiting
+# C:/altera/10.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity cont32
+# -- Compiling architecture acont32 of cont32
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(23): No feasible entries for infix operator "+".
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(23): Type error resolving infix expression "+" as type std.standard.bit_vector.
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(28): VHDL Compiler exiting
+# C:/altera/10.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity cont32
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(10): Integer literal 1 is not of type std.standard.bit_vector.
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(10): Port "um" must be of class SIGNAL.
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(12): VHDL Compiler exiting
+# C:/altera/10.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity cont32
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(10): near ":": expecting ';' or ')'
+# C:/altera/10.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity cont32
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(10): Port "um" must be of class SIGNAL.
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(12): VHDL Compiler exiting
+# C:/altera/10.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity cont32
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(10): Port "um" must be of class SIGNAL.
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(12): VHDL Compiler exiting
+# C:/altera/10.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity cont32
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(10): near ":=": expecting ':'
+# C:/altera/10.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity cont32
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(11): Expecting a type name, found string literal instead.
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(10): Port "um" must be of class SIGNAL.
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(12): VHDL Compiler exiting
+# C:/altera/10.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity cont32
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(10): near "'1'": expecting "STRING" or "IDENTIFIER" or "<<" or '('
+# C:/altera/10.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity cont32
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(10): near "end": expecting "IDENTIFIER"
+# C:/altera/10.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity cont32
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(10): near "end": expecting ';' or ')'
+# C:/altera/10.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity cont32
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(10): near "end": expecting ';' or ')'
+# C:/altera/10.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity cont32
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(10): near "end": expecting ';' or ')'
+# C:/altera/10.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity cont32
+# -- Compiling architecture acont32 of cont32
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(20): Enumeration literal '1' is not of type std.standard.bit_vector.
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(25): No feasible entries for infix operator "+".
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(25): Type error resolving infix expression "+" as type std.standard.bit_vector.
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(30): VHDL Compiler exiting
+# C:/altera/10.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity cont32
+# -- Compiling architecture acont32 of cont32
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(25): No feasible entries for infix operator "+".
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(25): Type error resolving infix expression "+" as type std.standard.bit_vector.
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(20): (vcom-1272) Length of expected is 32; length of actual is 31.
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(30): VHDL Compiler exiting
+# C:/altera/10.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity cont32
+# -- Compiling architecture acont32 of cont32
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(25): No feasible entries for infix operator "+".
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(25): Type error resolving infix expression "+" as type std.standard.bit_vector.
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(20): (vcom-1272) Length of expected is 32; length of actual is 30.
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(30): VHDL Compiler exiting
+# C:/altera/10.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work 1cont -O0 {C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6c Compiler 2010.08 Aug 24 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity cont32
+# -- Compiling architecture acont32 of cont32
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(25): No feasible entries for infix operator "+".
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(25): Type error resolving infix expression "+" as type std.standard.bit_vector.
+# ** Error: C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd(30): VHDL Compiler exiting
+# C:/altera/10.1/modelsim_ase/win32aloem/vcom failed.

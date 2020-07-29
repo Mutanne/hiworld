@@ -1,0 +1,4 @@
+DIA 20/10/2015
+Entregar listas:
+		-vetores e matrizes
+		-25 exercicios da apostila

@@ -1,0 +1,632 @@
+orig_7v                                                                                                                 PAGE 1
+                         1     org 0000h               ;
+0000 759000              2     MOV P1,#00h             ;
+                         3     principal:                      ;do menor p o maior
+0003 D290                4             setb p1.0       ;
+0005 12003E              5             lcall tempo     ;
+0008 759002              6             mov p1,#02h     ;
+000B 12003E              7             lcall tempo             ;
+000E 759004              8             mov p1,#04h     ;
+0011 12003E              9             lcall tempo             ;
+0014 759008             10             mov p1,#08h     ;
+0017 12003E             11             lcall tempo             ;
+001A 759010             12             mov p1,#10h     ;
+001D 12003E             13             lcall tempo             ;
+0020 759020             14             mov p1,#20h     ;
+0023 12003E             15             lcall tempo             ;
+0026 759040             16             mov p1,#40h     ;
+0029 12003E             17             lcall tempo             ;
+002C 759080             18             mov p1,#80h     ;
+002F 12003E             19             lcall tempo             ;
+0032 759000             20             MOV P1,#00h     ;
+0035 12003E             21             lcall tempo     ;
+0038 120064             22             lcall volta     ;
+003B 020003             23             ljmp principal  ;
+                        24     tempo:
+003E 7E9B               25             mov r6,#155     ;
+0040 7D96               26             mov r5,#150     ;
+                        27     tempo1:
+0042 DEFE               28             djnz r6,tempo1  ;
+0044 7E9B               29             mov r6,#155     ;
+0046 DDFA               30             djnz r5,tempo1  ;
+0048 22                 31             ret             ;
+                        32     tempo2:
+0049 7EFF               33             mov r6,#255     ;
+004B 7DFA               34             mov r5,#250     ;
+                        35     tempo3:
+004D DEF3               36             djnz r6,tempo1  ;
+004F 7EFF               37             mov r6,#255     ;
+0051 DDEF               38             djnz r5,tempo1  ;
+0053 120049             39             lcall tempo2    ;
+0056 DEEA               40             djnz r6,tempo1  ;
+0058 DDE8               41             djnz r5,tempo1  ;
+005A 22                 42             ret             ;
+                        43     tempo_r:
+005B 7E37               44             mov r6,#55     ;
+005D 7D32               45             mov r5,#50      ;
+                        46     tempo_rp:
+005F DEFE               47             djnz r6,tempo_rp;
+0061 DDFC               48             djnz r5,tempo_rp;
+0063 22                 49             ret             ;
+                        50     volta:                      ;do maior p o menor
+0064 D297               51             setb p1.7       ;
+0066 12003E             52             lcall tempo     ;
+0069 759040             53             mov p1,#40h     ;
+006C 12003E             54             lcall tempo             ;
+006F 759020             55             mov p1,#20h     ;
+0072 12003E             56             lcall tempo             ;
+0075 759010             57             mov p1,#10h     ;
+0078 12003E             58             lcall tempo             ;
+007B 759008             59             mov p1,#08h     ;
+007E 12003E             60             lcall tempo             ;
+0081 759004             61             mov p1,#04h     ;
+0084 12003E             62             lcall tempo             ;
+0087 759002             63             mov p1,#02h     ;
+008A 12003E             64             lcall tempo             ;
+008D 759001             65             mov p1,#01h     ;
+0090 12003E             66             lcall tempo             ;
+0093 759000             67             MOV P1,#00h     ;
+0096 12003E             68             lcall tempo     ;
+0099 1200BD             69             lcall volta2    ;
+                        70     volta1:                         ;abre
+009C 759018             71             mov p1,#18h             ;
+009F 12003E             72             lcall tempo             ;
+00A2 759024             73             mov p1,#24h             ;
+00A5 12003E             74             lcall tempo             ;
+00A8 759042             75             mov p1,#42h             ;
+00AB 12003E             76             lcall tempo             ;
+00AE 759081             77             mov p1,#81h             ;
+00B1 12003E             78             lcall tempo             ;
+00B4 759000             79             mov p1,#00h             ;
+00B7 12003E             80             lcall tempo             ;
+00BA 1201DA             81             lcall volta3    ;
+                        82     volta2:                         ;fecha
+00BD 759081             83             mov p1,#81h             ;
+00C0 12003E             84             lcall tempo             ;
+00C3 759042             85             mov p1,#42h             ;
+00C6 12003E             86             lcall tempo             ;
+00C9 759024             87             mov p1,#24h             ;
+00CC 12003E             88             lcall tempo             ;
+00CF 759018             89             mov p1,#18h             ;
+00D2 12003E             90             lcall tempo             ;
+00D5 759000             91             mov p1,#00h             ;
+00D8 12003E             92             lcall tempo             ;
+00DB 12009C             93             lcall volta1    ;
+                        94     volta4:                 ;tetris part1
+00DE D290               95             setb p1.0       ;
+00E0 12003E             96             lcall tempo     ;
+00E3 759002             97             mov p1,#02h     ;
+00E6 12003E             98             lcall tempo     ;
+00E9 759004             99             mov p1,#04h     ;
+00EC 12003E            100             lcall tempo     ;
+00EF 759008            101             mov p1,#08h     ;
+00F2 12003E            102             lcall tempo     ;
+00F5 759010            103             mov p1,#10h     ;
+00F8 12003E            104             lcall tempo     ;
+00FB 759020            105             mov p1,#20h     ;
+00FE 12003E            106             lcall tempo     ;
+0101 759040            107             mov p1,#40h     ;
+0104 12003E            108             lcall tempo     ;
+0107 759080            109             mov p1,#80h     ;
+010A 12003E            110             lcall tempo     ;
+                       111                                             ;tetris part2
+010D 759081            112             mov p1,#81h     ;
+0110 12003E            113             lcall tempo     ;
+0113 759082            114             mov p1,#82h     ;
+0116 12003E            115             lcall tempo     ;
+0119 759084            116             mov p1,#84h     ;
+011C 12003E            117             lcall tempo     ;
+011F 759088            118             mov p1,#88h     ;
+0122 12003E            119             lcall tempo     ;
+0125 759090            120             mov p1,#90h     ;
+0128 12003E            121             lcall tempo     ;
+012B 7590A0            122             mov p1,#10100000b;
+012E 12003E            123             lcall tempo     ;
+0131 7590C0            124             mov p1,#11000000b;
+0134 12003E            125             lcall tempo     ;
+                       126                                             ;tetris part3
+0137 7590C1            127             mov p1,#11000001b;
+013A 12003E            128             lcall tempo      ;
+013D 7590C2            129             mov p1,#11000010b;
+0140 12003E            130             lcall tempo      ;
+0143 7590C4            131             mov p1,#11000100b;
+0146 12003E            132             lcall tempo      ;
+0149 7590C8            133             mov p1,#11001000b;
+014C 12003E            134             lcall tempo      ;
+014F 7590D0            135             mov p1,#11010000b;
+0152 12003E            136             lcall tempo      ;
+0155 7590E0            137             mov p1,#11100000b;
+0158 12003E            138             lcall tempo      ;
+                       139                                             ;tetris part4
+015B 7590E1            140             mov p1,#11100001b;
+015E 12003E            141             lcall tempo      ;
+0161 7590E2            142             mov p1,#11100010b;
+0164 12003E            143             lcall tempo      ;
+0167 7590E4            144             mov p1,#11100100b;
+016A 12003E            145             lcall tempo      ;
+016D 7590E8            146             mov p1,#11101000b;
+0170 12003E            147             lcall tempo      ;
+0173 7590F0            148             mov p1,#11110000b;
+0176 12003E            149             lcall tempo      ;
+                       150                                             ;tetris part5
+0179 7590F1            151             mov p1,#11110001b;
+017C 12003E            152             lcall tempo      ;
+017F 7590F2            153             mov p1,#11110010b;
+0182 12003E            154             lcall tempo      ;
+0185 7590F4            155             mov p1,#11110100b;
+0188 12003E            156             lcall tempo      ;
+018B 7590F8            157             mov p1,#11111000b;
+018E 12003E            158             lcall tempo      ;
+                       159                                             ;tetris part6
+0191 7590F9            160             mov p1,#11111001b;
+0194 12003E            161             lcall tempo      ;
+0197 7590FA            162             mov p1,#11111010b;
+019A 12003E            163             lcall tempo      ;
+019D 7590FC            164             mov p1,#11111100b;
+01A0 12003E            165             lcall tempo      ;
+                       166                                             ;tetris part7
+01A3 7590FD            167             mov p1,#11111101b;
+01A6 12003E            168             lcall tempo      ;
+01A9 7590FE            169             mov p1,#11111110b;
+01AC 12003E            170             lcall tempo      ;
+01AF 7590FF            171             mov p1,#11111111b;
+01B2 12003E            172             lcall tempo      ;
+01B5 759000            173             mov p1,#00h              ;
+01B8 12003E            174             lcall tempo      ;
+01BB 7590FF            175             mov p1,#11111111b;
+01BE 12003E            176             lcall tempo      ;
+01C1 759000            177             mov p1,#00h              ;
+01C4 12003E            178             lcall tempo      ;
+01C7 7590FF            179             mov p1,#11111111b;
+01CA 12003E            180             lcall tempo      ;
+01CD 759000            181             mov p1,#00h              ;
+01D0 12003E            182             lcall tempo      ;
+01D3 7590FF            183             mov p1,#11111111b;
+01D6 12003E            184             lcall tempo      ;
+01D9 22                185             ret
+                       186     volta3:
+01DA 1200DE            187             lcall volta4    ;chama tetris
+01DD 7590AA            188             mov p1,#10101010b;
+01E0 120049            189             lcall tempo2    ;
+01E3 120049            190             lcall tempo2    ;
+01E6 120049            191             lcall tempo2    ;
+01E9 120049            192             lcall tempo2    ;
+01EC 759055            193             mov p1,#01010101b;
+01EF 120049            194             lcall tempo2    ;
+01F2 120049            195             lcall tempo2    ;
+01F5 120049            196             lcall tempo2    ;
+01F8 120049            197             lcall tempo2    ;
+                       198
+01FB 1201FE            199             lcall volta5    ;
+                       200     volta5:                         ;apaga tudo
+01FE 759056            201             mov p1,#01010110b;
+0201 12003E            202             lcall tempo      ;
+0204 759054            203             mov p1,#01010100b;
+0207 12003E            204             lcall tempo              ;
+020A 759058            205             mov p1,#01011000b;
+020D 12003E            206             lcall tempo              ;
+0210 759050            207             mov p1,#01010000b;
+0213 12003E            208             lcall tempo              ;
+0216 759060            209             mov p1,#01100000b;
+0219 12003E            210             lcall tempo              ;
+021C 759040            211             mov p1,#01000000b;
+021F 12003E            212             lcall tempo              ;
+0222 759080            213             mov p1,#10000000b;
+0225 12003E            214             lcall tempo              ;
+0228 759000            215             MOV P1,#00h      ;
+022B 12003E            216             lcall tempo      ;
+                       217
+022E D297              218             setb p1.7       ;
+0230 12003E            219             lcall tempo     ;
+0233 759040            220             mov p1,#40h     ;
+0236 12003E            221             lcall tempo             ;
+0239 759020            222             mov p1,#20h     ;
+023C 12003E            223             lcall tempo             ;
+023F 759010            224             mov p1,#10h     ;
+0242 12003E            225             lcall tempo             ;
+0245 759008            226             mov p1,#08h     ;
+0248 12003E            227             lcall tempo             ;
+024B 759004            228             mov p1,#04h     ;
+024E 12003E            229             lcall tempo             ;
+0251 759002            230             mov p1,#02h     ;
+0254 12003E            231             lcall tempo             ;
+0257 759001            232             mov p1,#01h     ;
+025A 12003E            233             lcall tempo             ;
+025D 759000            234             MOV P1,#00h     ;
+0260 12003E            235             lcall tempo     ;
+0263 120266            236             lcall volta6 ;
+                       237     volta6:                         ;pisca doido
+0266 7590AA            238             mov p1,#10101010b;
+0269 12005B            239             lcall tempo_r    ;
+026C 75906B            240             mov p1,#01101011b;
+026F 12005B            241             lcall tempo_r    ;
+0272 759055            242             mov p1,#01010101b;
+0275 12005B            243             lcall tempo_r    ;
+0278 7590B2            244             mov p1,#10110010b;
+027B 12005B            245             lcall tempo_r    ;
+027E 7590D7            246             mov p1,#11010111b;
+0281 12005B            247             lcall tempo_r    ;
+0284 7590AD            248             mov p1,#10101101b;
+0287 12005B            249             lcall tempo_r    ;
+028A 7590AA            250             mov p1,#10101010b;
+028D 12005B            251             lcall tempo_r    ;
+0290 75906B            252             mov p1,#01101011b;
+0293 12005B            253             lcall tempo_r    ;
+0296 759055            254             mov p1,#01010101b;
+0299 12005B            255             lcall tempo_r    ;
+029C 7590B2            256             mov p1,#10110010b;
+029F 12005B            257             lcall tempo_r    ;
+02A2 7590D7            258             mov p1,#11010111b;
+02A5 12005B            259             lcall tempo_r    ;
+02A8 7590AD            260             mov p1,#10101101b;
+02AB 12005B            261             lcall tempo_r    ;
+02AE 7590AA            262             mov p1,#10101010b;
+02B1 12005B            263             lcall tempo_r    ;
+02B4 75906B            264             mov p1,#01101011b;
+02B7 12005B            265             lcall tempo_r    ;
+02BA 759055            266             mov p1,#01010101b;
+02BD 12005B            267             lcall tempo_r    ;
+02C0 7590B2            268             mov p1,#10110010b;
+02C3 12005B            269             lcall tempo_r    ;
+02C6 7590D7            270             mov p1,#11010111b;
+02C9 12005B            271             lcall tempo_r    ;
+02CC 7590AD            272             mov p1,#10101101b;
+02CF 12005B            273             lcall tempo_r    ;
+02D2 120003            274             lcall principal  ;
+                       275     volta7:
+02D5 D290              276             setb p1.0       ;
+02D7 12003E            277             lcall tempo     ;
+02DA 759002            278             mov p1,#02h     ;
+02DD 12003E            279             lcall tempo             ;
+02E0 759004            280             mov p1,#04h     ;
+02E3 12003E            281             lcall tempo             ;
+02E6 759008            282             mov p1,#08h     ;
+02E9 12003E            283             lcall tempo             ;
+02EC 759010            284             mov p1,#10h     ;
+02EF 12003E            285             lcall tempo             ;
+02F2 759020            286             mov p1,#20h     ;
+02F5 12003E            287             lcall tempo             ;
+02F8 759040            288             mov p1,#40h     ;
+02FB 12003E            289             lcall tempo             ;
+02FE 759080            290             mov p1,#80h     ;
+0301 12003E            291             lcall tempo             ;
+0304 759000            292             MOV P1,#00h     ;
+0307 12003E            293             lcall tempo     ;
+                       294
+030A D297              295             setb p1.7       ;
+030C 12003E            296             lcall tempo     ;
+030F D296              297             setb p1.6       ;
+0311 12003E            298             lcall tempo     ;
+0314 D295              299             setb p1.5       ;
+0316 12003E            300             lcall tempo     ;
+0319 D294              301             setb p1.4       ;
+031B 12003E            302             lcall tempo     ;
+031E D293              303             setb p1.3       ;
+0320 12003E            304             lcall tempo     ;
+0323 D292              305             setb p1.2       ;
+0325 12003E            306             lcall tempo     ;
+0328 D291              307             setb p1.1       ;
+032A 12003E            308             lcall tempo     ;
+032D D290              309             setb p1.0       ;
+032F 12003E            310             lcall tempo     ;
+0332 759000            311             mov p1,#00h             ;
+0335 12003E            312             lcall tempo             ;
+0338 7590FF            313             MOV P1,#11111111b;
+033B 12003E            314             lcall tempo     ;
+033E 759000            315             mov p1,#00h             ;
+0341 12003E            316             lcall tempo             ;
+0344 7590FF            317             MOV P1,#11111111b;
+0347 12003E            318             lcall tempo     ;
+034A 759000            319             mov p1,#00h             ;
+034D 12003E            320             lcall tempo             ;
+0350 7590FF            321             MOV P1,#11111111b;
+0353 12003E            322             lcall tempo     ;
+0356 759000            323             mov p1,#00h             ;
+0359 12003E            324             lcall tempo             ;
+035C 7590BF            325             MOV P1,#10111111b;
+035F 12005B            326             lcall tempo_r   ;
+0362 7590BD            327             MOV P1,#10111101b;
+0365 12005B            328             lcall tempo_r   ;
+0368 75909D            329             MOV P1,#10011101b;
+036B 12005B            330             lcall tempo_r   ;
+036E 759099            331             MOV P1,#10011001b;
+0371 12005B            332             lcall tempo_r   ;
+0374 759089            333             MOV P1,#10001001b;
+0377 12003E            334             lcall tempo     ;
+                       335
+037A 759085            336             MOV P1,#10000101b;
+037D 12005B            337             lcall tempo_r   ;
+0380 759083            338             MOV P1,#10000011b;
+0383 12005B            339             lcall tempo_r   ;
+0386 759085            340             MOV P1,#10000101b;
+0389 12005B            341             lcall tempo_r   ;
+038C 759089            342             MOV P1,#10001001b;
+038F 12005B            343             lcall tempo_r   ;
+0392 759091            344             MOV P1,#10010001b;
+0395 12005B            345             lcall tempo_r   ;
+0398 7590A1            346             MOV P1,#10100001b;
+039B 12005B            347             lcall tempo_r   ;
+039E 7590C1            348             MOV P1,#11000001b;
+03A1 12005B            349             lcall tempo_r   ;
+03A4 7590A1            350             MOV P1,#10100001b;
+03A7 12005B            351             lcall tempo_r   ;
+03AA 759091            352             MOV P1,#10010001b;
+03AD 12005B            353             lcall tempo_r   ;
+03B0 759089            354             MOV P1,#10001001b;
+03B3 12005B            355             lcall tempo_r   ;
+                       356
+03B6 759085            357             MOV P1,#10000101b;
+03B9 12005B            358             lcall tempo_r   ;
+03BC 759083            359             MOV P1,#10000011b;
+03BF 12005B            360             lcall tempo_r   ;
+03C2 759085            361             MOV P1,#10000101b;
+03C5 12005B            362             lcall tempo_r   ;
+03C8 759089            363             MOV P1,#10001001b;
+03CB 12005B            364             lcall tempo_r   ;
+03CE 759091            365             MOV P1,#10010001b;
+03D1 12005B            366             lcall tempo_r   ;
+03D4 7590A1            367             MOV P1,#10100001b;
+03D7 12005B            368             lcall tempo_r   ;
+03DA 7590C3            369             MOV P1,#11000011b;
+03DD 12005B            370             lcall tempo_r   ;
+03E0 7590A3            371             MOV P1,#10100011b;
+03E3 12005B            372             lcall tempo_r   ;
+03E6 759093            373             MOV P1,#10010011b;
+03E9 12005B            374             lcall tempo_r   ;
+03EC 75908B            375             MOV P1,#10001011b;
+03EF 12005B            376             lcall tempo_r   ;
+03F2 759087            377             MOV P1,#10000111b;
+03F5 12005B            378             lcall tempo_r   ;
+03F8 7590C3            379             MOV P1,#11000011b;
+03FB 12005B            380             lcall tempo_r   ;
+03FE 7590C7            381             MOV P1,#11000111b;
+0401 12005B            382             lcall tempo_r   ;
+0404 7590CD            383             MOV P1,#11001101b;
+0407 12005B            384             lcall tempo_r   ;
+040A 7590D9            385             MOV P1,#11011001b;
+040D 12005B            386             lcall tempo_r   ;
+0410 7590F1            387             MOV P1,#11110001b;
+0413 12005B            388             lcall tempo_r   ;
+0416 7590E3            389             MOV P1,#11100011b;
+0419 12005B            390             lcall tempo_r   ;
+041C 7590F3            391             MOV P1,#11110011b;
+041F 12005B            392             lcall tempo_r   ;
+0422 7590BB            393             MOV P1,#10111011b;
+0425 12005B            394             lcall tempo_r   ;
+0428 75909F            395             MOV P1,#10011111b;
+042B 12005B            396             lcall tempo_r   ;
+042E 7590CF            397             MOV P1,#11001111b;
+0431 12005B            398             lcall tempo_r   ;
+0434 7590DF            399             MOV P1,#11011111b;
+0437 12005B            400             lcall tempo_r   ;
+043A 7590FF            401             MOV P1,#11111111b;
+043D 12005B            402             lcall tempo_r   ;
+0440 759000            403             MOV P1,#00h             ;
+0443 12005B            404             lcall tempo_r   ;
+0446 7590FF            405             MOV P1,#11111111b;
+0449 12005B            406             lcall tempo_r   ;
+044C 759000            407             MOV P1,#00h             ;
+044F 12005B            408             lcall tempo_r   ;
+0452 7590FF            409             MOV P1,#11111111b;
+0455 12005B            410             lcall tempo_r   ;
+0458 759000            411             MOV P1,#00h             ;
+                       412
+045B 120003            413             lcall principal ;
+                       414
+                       415
+                       416
+                       417
+                       418
+                       419
+                       420
+                       421
+                       422
+                       423
+                       424
+                       425
+                       426
+                       427
+                       428
+****WARNING: Missing `END' directive
+ASSEMBLY COMPLETE, NO ERRORS FOUND, 1 WARNING
+
+
+ERROR SUMMARY:
+Line 428, WARNING: Missing `END' directive
+
+SYMBOL TABLE:
+??MCU_8051_IDE . . . . . . . . . . .  N  NUMB  8051H  NOT USED
+??VERSION. . . . . . . . . . . . . .  N  NUMB  0147H  NOT USED
+AC . . . . . . . . . . . . . . . . .  B  ADDR  00D6H  NOT USED
+ACC. . . . . . . . . . . . . . . . .  D  ADDR  00E0H  NOT USED
+ACSR . . . . . . . . . . . . . . . .  D  ADDR  0097H  NOT USED
+ADCF . . . . . . . . . . . . . . . .  D  ADDR  00F6H  NOT USED
+ADCLK. . . . . . . . . . . . . . . .  D  ADDR  00F2H  NOT USED
+ADCON. . . . . . . . . . . . . . . .  D  ADDR  00F3H  NOT USED
+ADDH . . . . . . . . . . . . . . . .  D  ADDR  00F5H  NOT USED
+ADDL . . . . . . . . . . . . . . . .  D  ADDR  00F4H  NOT USED
+AUXR . . . . . . . . . . . . . . . .  D  ADDR  008EH  NOT USED
+AUXR1. . . . . . . . . . . . . . . .  D  ADDR  00A2H  NOT USED
+B. . . . . . . . . . . . . . . . . .  D  ADDR  00F0H  NOT USED
+BDRCON . . . . . . . . . . . . . . .  D  ADDR  009BH  NOT USED
+BDRCON_1 . . . . . . . . . . . . . .  D  ADDR  009CH  NOT USED
+BRL. . . . . . . . . . . . . . . . .  D  ADDR  009AH  NOT USED
+CCAP0H . . . . . . . . . . . . . . .  D  ADDR  00FAH  NOT USED
+CCAP0L . . . . . . . . . . . . . . .  D  ADDR  00EAH  NOT USED
+CCAP1H . . . . . . . . . . . . . . .  D  ADDR  00FBH  NOT USED
+CCAP1L . . . . . . . . . . . . . . .  D  ADDR  00EBH  NOT USED
+CCAP2H . . . . . . . . . . . . . . .  D  ADDR  00FCH  NOT USED
+CCAP3H . . . . . . . . . . . . . . .  D  ADDR  00FDH  NOT USED
+CCAP4H . . . . . . . . . . . . . . .  D  ADDR  00FEH  NOT USED
+CCAPL2H. . . . . . . . . . . . . . .  D  ADDR  00FCH  NOT USED
+CCAPL2L. . . . . . . . . . . . . . .  D  ADDR  00ECH  NOT USED
+CCAPL3H. . . . . . . . . . . . . . .  D  ADDR  00FDH  NOT USED
+CCAPL3L. . . . . . . . . . . . . . .  D  ADDR  00EDH  NOT USED
+CCAPL4H. . . . . . . . . . . . . . .  D  ADDR  00FEH  NOT USED
+CCAPL4L. . . . . . . . . . . . . . .  D  ADDR  00EEH  NOT USED
+CCAPM0 . . . . . . . . . . . . . . .  D  ADDR  00DAH  NOT USED
+CCAPM1 . . . . . . . . . . . . . . .  D  ADDR  00DBH  NOT USED
+CCAPM2 . . . . . . . . . . . . . . .  D  ADDR  00DCH  NOT USED
+CCAPM3 . . . . . . . . . . . . . . .  D  ADDR  00DDH  NOT USED
+CCAPM4 . . . . . . . . . . . . . . .  D  ADDR  00DEH  NOT USED
+CCF0 . . . . . . . . . . . . . . . .  B  ADDR  00D8H  NOT USED
+CCF1 . . . . . . . . . . . . . . . .  B  ADDR  00D9H  NOT USED
+CCF2 . . . . . . . . . . . . . . . .  B  ADDR  00DAH  NOT USED
+CCF3 . . . . . . . . . . . . . . . .  B  ADDR  00DBH  NOT USED
+CCF4 . . . . . . . . . . . . . . . .  B  ADDR  00DCH  NOT USED
+CCON . . . . . . . . . . . . . . . .  D  ADDR  00D8H  NOT USED
+CFINT. . . . . . . . . . . . . . . .  C  ADDR  0033H  NOT USED
+CH . . . . . . . . . . . . . . . . .  D  ADDR  00F9H  NOT USED
+CKCON. . . . . . . . . . . . . . . .  D  ADDR  008FH  NOT USED
+CKCON0 . . . . . . . . . . . . . . .  D  ADDR  008FH  NOT USED
+CKRL . . . . . . . . . . . . . . . .  D  ADDR  0097H  NOT USED
+CKSEL. . . . . . . . . . . . . . . .  D  ADDR  0085H  NOT USED
+CL . . . . . . . . . . . . . . . . .  D  ADDR  00E9H  NOT USED
+CLKREG . . . . . . . . . . . . . . .  D  ADDR  008FH  NOT USED
+CMOD . . . . . . . . . . . . . . . .  D  ADDR  00D9H  NOT USED
+CPRL2. . . . . . . . . . . . . . . .  B  ADDR  00C8H  NOT USED
+CR . . . . . . . . . . . . . . . . .  B  ADDR  00DEH  NOT USED
+CT2. . . . . . . . . . . . . . . . .  B  ADDR  00C9H  NOT USED
+CY . . . . . . . . . . . . . . . . .  B  ADDR  00D7H  NOT USED
+DP0H . . . . . . . . . . . . . . . .  D  ADDR  0083H  NOT USED
+DP0L . . . . . . . . . . . . . . . .  D  ADDR  0082H  NOT USED
+DP1H . . . . . . . . . . . . . . . .  D  ADDR  0085H  NOT USED
+DP1L . . . . . . . . . . . . . . . .  D  ADDR  0084H  NOT USED
+DPH. . . . . . . . . . . . . . . . .  D  ADDR  0083H  NOT USED
+DPL. . . . . . . . . . . . . . . . .  D  ADDR  0082H  NOT USED
+EA . . . . . . . . . . . . . . . . .  B  ADDR  00AFH  NOT USED
+EC . . . . . . . . . . . . . . . . .  B  ADDR  00AEH  NOT USED
+EECON. . . . . . . . . . . . . . . .  D  ADDR  0096H  NOT USED
+ES . . . . . . . . . . . . . . . . .  B  ADDR  00ACH  NOT USED
+ET0. . . . . . . . . . . . . . . . .  B  ADDR  00A9H  NOT USED
+ET1. . . . . . . . . . . . . . . . .  B  ADDR  00ABH  NOT USED
+ET2. . . . . . . . . . . . . . . . .  B  ADDR  00ADH  NOT USED
+EX0. . . . . . . . . . . . . . . . .  B  ADDR  00A8H  NOT USED
+EX1. . . . . . . . . . . . . . . . .  B  ADDR  00AAH  NOT USED
+EXEN2. . . . . . . . . . . . . . . .  B  ADDR  00CBH  NOT USED
+EXF2 . . . . . . . . . . . . . . . .  B  ADDR  00CEH  NOT USED
+EXTI0. . . . . . . . . . . . . . . .  C  ADDR  0003H  NOT USED
+EXTI1. . . . . . . . . . . . . . . .  C  ADDR  0013H  NOT USED
+F0 . . . . . . . . . . . . . . . . .  B  ADDR  00D5H  NOT USED
+FE . . . . . . . . . . . . . . . . .  B  ADDR  009FH  NOT USED
+IE . . . . . . . . . . . . . . . . .  D  ADDR  00A8H  NOT USED
+IE0. . . . . . . . . . . . . . . . .  B  ADDR  0089H  NOT USED
+IE1. . . . . . . . . . . . . . . . .  B  ADDR  008BH  NOT USED
+INT0 . . . . . . . . . . . . . . . .  B  ADDR  00B2H  NOT USED
+INT1 . . . . . . . . . . . . . . . .  B  ADDR  00B3H  NOT USED
+IP . . . . . . . . . . . . . . . . .  D  ADDR  00B8H  NOT USED
+IPH. . . . . . . . . . . . . . . . .  D  ADDR  00B7H  NOT USED
+IPH0 . . . . . . . . . . . . . . . .  D  ADDR  00B7H  NOT USED
+IPH1 . . . . . . . . . . . . . . . .  D  ADDR  00B3H  NOT USED
+IPL0 . . . . . . . . . . . . . . . .  D  ADDR  00B8H  NOT USED
+IPL1 . . . . . . . . . . . . . . . .  D  ADDR  00B2H  NOT USED
+IT0. . . . . . . . . . . . . . . . .  B  ADDR  0088H  NOT USED
+IT1. . . . . . . . . . . . . . . . .  B  ADDR  008AH  NOT USED
+KBE. . . . . . . . . . . . . . . . .  D  ADDR  009DH  NOT USED
+KBF. . . . . . . . . . . . . . . . .  D  ADDR  009EH  NOT USED
+KBLS . . . . . . . . . . . . . . . .  D  ADDR  009CH  NOT USED
+OSCCON . . . . . . . . . . . . . . .  D  ADDR  0086H  NOT USED
+OV . . . . . . . . . . . . . . . . .  B  ADDR  00D2H  NOT USED
+P. . . . . . . . . . . . . . . . . .  B  ADDR  00D0H  NOT USED
+P0 . . . . . . . . . . . . . . . . .  D  ADDR  0080H  NOT USED
+P1 . . . . . . . . . . . . . . . . .  D  ADDR  0090H
+P1M1 . . . . . . . . . . . . . . . .  D  ADDR  00D4H  NOT USED
+P1M2 . . . . . . . . . . . . . . . .  D  ADDR  00E2H  NOT USED
+P2 . . . . . . . . . . . . . . . . .  D  ADDR  00A0H  NOT USED
+P3 . . . . . . . . . . . . . . . . .  D  ADDR  00B0H  NOT USED
+P3M1 . . . . . . . . . . . . . . . .  D  ADDR  00D5H  NOT USED
+P3M2 . . . . . . . . . . . . . . . .  D  ADDR  00E3H  NOT USED
+P4 . . . . . . . . . . . . . . . . .  D  ADDR  00C0H  NOT USED
+P4M1 . . . . . . . . . . . . . . . .  D  ADDR  00D6H  NOT USED
+P4M2 . . . . . . . . . . . . . . . .  D  ADDR  00E4H  NOT USED
+P5 . . . . . . . . . . . . . . . . .  D  ADDR  00E8H  NOT USED
+PC . . . . . . . . . . . . . . . . .  B  ADDR  00BEH  NOT USED
+PCON . . . . . . . . . . . . . . . .  D  ADDR  0087H  NOT USED
+PPCL . . . . . . . . . . . . . . . .  B  ADDR  00BEH  NOT USED
+PRINCIPAL. . . . . . . . . . . . . .  C  ADDR  0003H
+PS . . . . . . . . . . . . . . . . .  B  ADDR  00BCH  NOT USED
+PSL. . . . . . . . . . . . . . . . .  B  ADDR  00BCH  NOT USED
+PSW. . . . . . . . . . . . . . . . .  D  ADDR  00D0H  NOT USED
+PT0. . . . . . . . . . . . . . . . .  B  ADDR  00B9H  NOT USED
+PT0L . . . . . . . . . . . . . . . .  B  ADDR  00B9H  NOT USED
+PT1. . . . . . . . . . . . . . . . .  B  ADDR  00BBH  NOT USED
+PT1L . . . . . . . . . . . . . . . .  B  ADDR  00BBH  NOT USED
+PT2. . . . . . . . . . . . . . . . .  B  ADDR  00BDH  NOT USED
+PT2L . . . . . . . . . . . . . . . .  B  ADDR  00BDH  NOT USED
+PX0. . . . . . . . . . . . . . . . .  B  ADDR  00B8H  NOT USED
+PX0L . . . . . . . . . . . . . . . .  B  ADDR  00B8H  NOT USED
+PX1. . . . . . . . . . . . . . . . .  B  ADDR  00BAH  NOT USED
+PX1L . . . . . . . . . . . . . . . .  B  ADDR  00BAH  NOT USED
+RB8. . . . . . . . . . . . . . . . .  B  ADDR  009AH  NOT USED
+RCAP2H . . . . . . . . . . . . . . .  D  ADDR  00CBH  NOT USED
+RCAP2L . . . . . . . . . . . . . . .  D  ADDR  00CAH  NOT USED
+RCLK . . . . . . . . . . . . . . . .  B  ADDR  00CDH  NOT USED
+RD . . . . . . . . . . . . . . . . .  B  ADDR  00B7H  NOT USED
+REN. . . . . . . . . . . . . . . . .  B  ADDR  009CH  NOT USED
+RESET. . . . . . . . . . . . . . . .  C  ADDR  0000H  NOT USED
+RI . . . . . . . . . . . . . . . . .  B  ADDR  0098H  NOT USED
+RS0. . . . . . . . . . . . . . . . .  B  ADDR  00D3H  NOT USED
+RS1. . . . . . . . . . . . . . . . .  B  ADDR  00D4H  NOT USED
+RXD. . . . . . . . . . . . . . . . .  B  ADDR  00B0H  NOT USED
+SADDR. . . . . . . . . . . . . . . .  D  ADDR  00A9H  NOT USED
+SADDR_0. . . . . . . . . . . . . . .  D  ADDR  00A9H  NOT USED
+SADDR_1. . . . . . . . . . . . . . .  D  ADDR  00AAH  NOT USED
+SADEN. . . . . . . . . . . . . . . .  D  ADDR  00B9H  NOT USED
+SADEN_0. . . . . . . . . . . . . . .  D  ADDR  00B9H  NOT USED
+SADEN_1. . . . . . . . . . . . . . .  D  ADDR  00BAH  NOT USED
+SBUF . . . . . . . . . . . . . . . .  D  ADDR  0099H  NOT USED
+SCON . . . . . . . . . . . . . . . .  D  ADDR  0098H  NOT USED
+SINT . . . . . . . . . . . . . . . .  C  ADDR  0023H  NOT USED
+SM0. . . . . . . . . . . . . . . . .  B  ADDR  009FH  NOT USED
+SM1. . . . . . . . . . . . . . . . .  B  ADDR  009EH  NOT USED
+SM2. . . . . . . . . . . . . . . . .  B  ADDR  009DH  NOT USED
+SP . . . . . . . . . . . . . . . . .  D  ADDR  0081H  NOT USED
+SPCON. . . . . . . . . . . . . . . .  D  ADDR  00C3H  NOT USED
+SPCR . . . . . . . . . . . . . . . .  D  ADDR  00D5H  NOT USED
+SPDAT. . . . . . . . . . . . . . . .  D  ADDR  00C5H  NOT USED
+SPDR . . . . . . . . . . . . . . . .  D  ADDR  0086H  NOT USED
+SPSR . . . . . . . . . . . . . . . .  D  ADDR  00AAH  NOT USED
+SPSTA. . . . . . . . . . . . . . . .  D  ADDR  00C4H  NOT USED
+T0 . . . . . . . . . . . . . . . . .  B  ADDR  00B4H  NOT USED
+T1 . . . . . . . . . . . . . . . . .  B  ADDR  00B5H  NOT USED
+T2CON. . . . . . . . . . . . . . . .  D  ADDR  00C8H  NOT USED
+T2MOD. . . . . . . . . . . . . . . .  D  ADDR  00C9H  NOT USED
+TB8. . . . . . . . . . . . . . . . .  B  ADDR  009BH  NOT USED
+TCLK . . . . . . . . . . . . . . . .  B  ADDR  00CCH  NOT USED
+TCON . . . . . . . . . . . . . . . .  D  ADDR  0088H  NOT USED
+TEMPO. . . . . . . . . . . . . . . .  C  ADDR  003EH
+TEMPO1 . . . . . . . . . . . . . . .  C  ADDR  0042H
+TEMPO2 . . . . . . . . . . . . . . .  C  ADDR  0049H
+TEMPO3 . . . . . . . . . . . . . . .  C  ADDR  004DH  NOT USED
+TEMPO_R. . . . . . . . . . . . . . .  C  ADDR  005BH
+TEMPO_RP . . . . . . . . . . . . . .  C  ADDR  005FH
+TF0. . . . . . . . . . . . . . . . .  B  ADDR  008DH  NOT USED
+TF1. . . . . . . . . . . . . . . . .  B  ADDR  008FH  NOT USED
+TF2. . . . . . . . . . . . . . . . .  B  ADDR  00CFH  NOT USED
+TH0. . . . . . . . . . . . . . . . .  D  ADDR  008CH  NOT USED
+TH1. . . . . . . . . . . . . . . . .  D  ADDR  008DH  NOT USED
+TH2. . . . . . . . . . . . . . . . .  D  ADDR  00CDH  NOT USED
+TI . . . . . . . . . . . . . . . . .  B  ADDR  0099H  NOT USED
+TIMER0 . . . . . . . . . . . . . . .  C  ADDR  000BH  NOT USED
+TIMER1 . . . . . . . . . . . . . . .  C  ADDR  001BH  NOT USED
+TIMER2 . . . . . . . . . . . . . . .  C  ADDR  002BH  NOT USED
+TL0. . . . . . . . . . . . . . . . .  D  ADDR  008AH  NOT USED
+TL1. . . . . . . . . . . . . . . . .  D  ADDR  008BH  NOT USED
+TL2. . . . . . . . . . . . . . . . .  D  ADDR  00CCH  NOT USED
+TMOD . . . . . . . . . . . . . . . .  D  ADDR  0089H  NOT USED
+TR0. . . . . . . . . . . . . . . . .  B  ADDR  008CH  NOT USED
+TR1. . . . . . . . . . . . . . . . .  B  ADDR  008EH  NOT USED
+TR2. . . . . . . . . . . . . . . . .  B  ADDR  00CAH  NOT USED
+TXD. . . . . . . . . . . . . . . . .  B  ADDR  00B1H  NOT USED
+VOLTA. . . . . . . . . . . . . . . .  C  ADDR  0064H
+VOLTA1 . . . . . . . . . . . . . . .  C  ADDR  009CH
+VOLTA2 . . . . . . . . . . . . . . .  C  ADDR  00BDH
+VOLTA3 . . . . . . . . . . . . . . .  C  ADDR  01DAH
+VOLTA4 . . . . . . . . . . . . . . .  C  ADDR  00DEH
+VOLTA5 . . . . . . . . . . . . . . .  C  ADDR  01FEH
+VOLTA6 . . . . . . . . . . . . . . .  C  ADDR  0266H
+VOLTA7 . . . . . . . . . . . . . . .  C  ADDR  02D5H  NOT USED
+WDTCON . . . . . . . . . . . . . . .  D  ADDR  00A7H  NOT USED
+WDTPRG . . . . . . . . . . . . . . .  D  ADDR  00A7H  NOT USED
+WDTRST . . . . . . . . . . . . . . .  D  ADDR  00A6H  NOT USED
+WR . . . . . . . . . . . . . . . . .  B  ADDR  00B6H  NOT USED

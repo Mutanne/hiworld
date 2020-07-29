@@ -1,0 +1,57 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Documents and Settings\usuario\desktop\Aula_ModelSim1
+Econt32
+Z1 w1403219312
+Z2 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+Z3 dC:\Documents and Settings\usuario\desktop\Aula_ModelSim1
+Z4 8C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd
+Z5 FC:/Documents and Settings/usuario/desktop/Aula_ModelSim1/cont32.vhd
+l0
+L4
+Vh>L;k1EZ]X22@l4:43m<l0
+!s100 <8C12k1BLLhe7Bzi30IdB2
+Z6 OV;C;6.6c;45
+32
+Z7 o-work 1cont -O0
+Z8 tExplicit 1
+Aacont32
+R2
+DEx4 work 6 cont32 0 22 Gc[2B`G6EQHB40_BIaS8^2
+l15
+L13
+VKb8Jj;jPGhMm6Zb0aefnS0
+R6
+32
+Z9 Mx1 4 ieee 14 std_logic_1164
+R7
+R8
+!s100 8K4==Xk@LB8XjGf`CL]Jh2
+Etcont32
+Z10 w1403216507
+R2
+R3
+Z11 8C:/Documents and Settings/usuario/desktop/Aula_ModelSim1/tcont32.vhd
+Z12 FC:/Documents and Settings/usuario/desktop/Aula_ModelSim1/tcont32.vhd
+l0
+L3
+VZgmX`CGmz9KZ7lcXW_zl20
+R6
+32
+R7
+R8
+!s100 4G_j:kc_M7[bTNnZg>;mA2
+Aatcont32
+R2
+DEx4 work 7 tcont32 0 22 ZgmX`CGmz9KZ7lcXW_zl20
+l22
+L8
+VDUYnCQa?96VzYi_a@<^Bk2
+R6
+32
+R9
+R7
+R8
+!s100 X:E6cgCYCAcQCIOYZ[cAI0
