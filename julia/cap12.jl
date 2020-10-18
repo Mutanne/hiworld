@@ -81,10 +81,10 @@ Base.operator_associativity(:-), Base.operator_associativity(:+)
 Base.operator_associativity(:^)
 Base.operator_associativity(:sin)
 
-Note that symbols such as :sin return precedence 0.
-This value represents invalid operators and not operators
-of lowest precedence.
-Similarly, such operators are assigned associativity :none.
+#Note that symbols such as :sin return precedence 0.
+#This value represents invalid operators and not operators
+#of lowest precedence.
+#Similarly, such operators are assigned associativity :none.
 
 #Conversions
 Int8(127.0)
@@ -169,4 +169,4 @@ significand(128.0)
 
 #Mais funções matemàticas especiais em SpecialFunctions.jl
 
-endcap
+#endcap
