@@ -3,6 +3,8 @@ println(40 + 2, " Soma")
 println(43 - 1," Subtração")
 println(6 * 7," Multiplicação")
 println(84 / 2," Divisão")
+println(84.5 ÷ 2," Divisão inteira")
+println(84.5 % 2," Resto divisão")
 println(84 // 2," ", typeof(84 // 2))  #devem ser Int
 println(2 \ 84," Divisão do contra")
 println(6^2 + 6," Exponenciação")
@@ -49,3 +51,85 @@ println(roots)
 println("println") #imprime e pula linha
 print("um print, ") #não pula linha
 print("outro print")
+
+println("\n------ Cap 4: Design de interface ------\n")
+using ThinkJulia
+🐢 = Turtle()
+
+@svg begin
+    forward(🐢, 100)
+    turn(🐢, -90)
+    forward(🐢, 100)
+    turn(🐢, -90)
+    forward(🐢, 100)
+    turn(🐢, -90)
+    forward(🐢, 100)
+end
+
+@svg begin
+    for i in 1:4
+        forward(🐢, 100)
+        turn(🐢, -90)
+    end
+end
+
+function quadrado(t, com)
+    @svg begin
+        for i in 1:4
+            forward(t, com)
+            turn(t, -90)
+        end
+    end
+end
+quadrado(🐢,50)
+
+function polígono(t, com,n)
+    angulo = 360/n
+    polilinha(t, com, n, angulo)
+end
+polígono(🐢,50,6)
+
+function circulo(t, r)
+    arco(t, r, 360)
+end
+circulo(🐢,100)
+
+function arco(t, r, θ)
+    arco = 2π*r*θ / 360
+    n = arco ÷ 3 + 1
+    com = arco/n
+    angulo = θ / n
+    #fazendo uma leve curva para a esquerda antes de iniciar
+    #reduz o erro causado pela aproximação linear do arco
+    turn(t, -angulo/2)
+    polilinha(t, com, n, angulo)
+    turn(t, -angulo/2)
+end
+
+#Docstring
+"""
+polilinha(t, com, n, angulo)
+
+Desenha n segmentos de linha dado o comprimento(com)
+e o angulo(em graus) entre eles. t é uma tartaruga.
+"""
+function polilinha(t, com, n, angulo)
+    @svg begin
+        for i in 1:n
+            forward(t, com)
+            turn(t, -angulo)
+        end
+    end
+end
+arco(🐢,100,180)
+
+"""🐱 = Turtle()
+@svg begin
+    turn(🐱, 135)
+    forward(🐱, 200)
+end"""
+
+println("\n------ Cap 5: Cond e Recursão ------\n")
+println(true && false)  #AND
+println(true || false)  #OR
+println(!true)  #NOT
