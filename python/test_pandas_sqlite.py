@@ -24,8 +24,11 @@ def datab():
             dados = sq.LerTudo()
             sq.Fecha()
             print('')
-            for d in dados:
-                print(d[0], d[1], d[2])      
+            #for d in dados:   print(d[0], d[1], d[2])      
+            df = pd.DataFrame(dados,columns=['codigo','nome','idade'])
+            ind_vazio = [''] * len(df)
+            df.index = ind_vazio
+            print(df)
         elif opc == '2':
             cod = int(input('Codigo do cliente: '))
             sq.Inicia()
