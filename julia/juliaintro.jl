@@ -121,13 +121,36 @@ function polilinha(t, com, n, angulo)
         end
     end
 end
-arco(🐢,100,180)
-
+arco(🐢,100,135)
+arco(🐢,100,135)
+@svg
 """🐱 = Turtle()
 @svg begin
     turn(🐱, 135)
     forward(🐱, 200)
 end"""
+
+#exercicio 4
+# 4.1
+
+function flor()
+    arco = 2π*r*θ / 360
+    n = arco ÷ 3 + 1
+    com = arco/n
+    angulo = θ / n
+    #fazendo uma leve curva para a esquerda antes de iniciar
+    #reduz o erro causado pela aproximação linear do arco
+    turn(t, -angulo/2)
+    polilinha(t, com, n, angulo)
+    turn(t, -angulo/2)
+
+    @svg begin
+        for i in 1:n
+            forward(t, com)
+            turn(t, -angulo)
+        end
+    end
+end
 
 println("\n------ Cap 5: Cond e Recursão ------\n")
 println(true && false)  #AND
