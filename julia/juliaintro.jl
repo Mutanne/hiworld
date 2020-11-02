@@ -156,3 +156,46 @@ println("\n------ Cap 5: Cond e Recursão ------\n")
 println(true && false)  #AND
 println(true || false)  #OR
 println(!true)  #NOT
+
+function contagem_regressiva(n)
+    if n ≤ 0
+        println("Feliz Ano Novo!")
+    else
+        print(n, " ")
+        contagem_regressiva(n-1)
+    end
+end
+contagem_regressiva(3)
+
+function imprima_n(s, n)
+    if n ≤ 0
+        return
+    end
+    println(s)
+    imprima_n(s, n-1)
+end
+imprima_n("spam", 4)
+
+texto = readline()
+print(texto)
+
+println("Qual é a velocidade de voo de uma andorinha sem carga?");
+velocidade = readline()
+println(typeof(velocidade))
+velocidade = parse(Int64, velocidade)
+println(typeof(velocidade))
+
+potência_do_sinal = 9
+potência_do_ruido = 10
+razão = potência_do_sinal / potência_do_ruido
+decibéis = 10 * log10(razão)
+println(decibéis)
+
+seg = time()
+dias = seg / 60 / 60 / 24
+println(dias)
+hora = dias - dias ÷ 1
+hora *= 60
+dias ÷= 1
+println(dias)
+println(hora)
