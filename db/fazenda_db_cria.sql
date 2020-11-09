@@ -24,14 +24,16 @@ produção_dia float,
 foi_inseminada varchar(3),
 dia_inseminacao date,
 dia_parto date, 
-dia_secagem int,
-minu_rumina_dia int,
-obs varchar(50)
+dia_secagem date,
+minu_rumina_dia int
 );
-Insert into PRODU_LEITE(especie,ultima_ordenha,temp_leite,produção_dia,foi_inseminada,dia_parto,dia_secagem,minu_rumina_dia,obs) 
-values("nelore","2020-11-01 4:30:00",38,25,"sim","2020-09-01","2020-12-01",1280,""),
-	  ("nelore","2020-11-01 4:30:00",39,19,"sim","2020-10-01","2020-12-01",1290,""),
-	  ("nelore","2020-11-01 4:30:00",40,24,"sim","2020-09-01","2020-12-01",1300,"");
+Insert into PRODU_LEITE(especie,ultima_ordenha,temp_leite,produção_dia,foi_inseminada,dia_parto,dia_secagem,minu_rumina_dia) 
+values("nelore","2020-11-01 4:30:00",38,25,"sim","2020-09-01","2020-12-06",1280),
+	  ("nelore","2020-11-02 4:30:00",39,19,"sim","2020-10-02","2020-12-05",1290),
+	  ("nelore","2020-11-03 4:30:00",40,24,"sim","2020-09-03","2020-12-04",1300),
+      ("nelore","2020-11-04 4:30:00",38,25,"sim","2020-09-04","2020-12-03",1280),
+	  ("nelore","2020-11-05 4:30:00",39,17,"sim","2020-10-05","2020-12-02",1290),
+	  ("nelore","2020-11-06 4:30:00",40,26,"sim","2020-09-06","2020-12-01",1300);
 
 create table PLANTIO(
 ID_pl int auto_increment not null primary key,
@@ -82,7 +84,16 @@ CNPJ varchar(14),
 soma_saldos float
 );
 INSERT INTO VAREJISTAS(nome,CNPJ,soma_saldos) 
-VALUES("Agrorural Ltda.", "01234567890123",1560,50),
+VALUES("Agrorural Ltda.", "01234567890123",1560.50),
 	  ("Agro é Tech", "98765432109876",-2500.20),
 	  ("Agro é tudo", "13579024680123",5640.80);
-      
+
+#queries ------
+select * from produ_leite;
+alter table produ_leite drop column dia_inseminacao;
+
+create function mul (a float,b float) 
+returns float 
+return a * b;
+
+select ID_vaca, mul(5,produ_leite.produção_dia);
