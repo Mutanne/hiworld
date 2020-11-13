@@ -199,3 +199,60 @@ hora *= 60
 dias ÷= 1
 println(dias)
 println(hora)
+
+function distância(x₁, y₁, x₂, y₂)
+    dx = x₂-x₁
+    dy = y₂-y₁
+    d² = dx^2 + dy^2
+    sqrt(d²)
+end
+distância(1, 2, 4, 6)
+
+function é_divisivel(x, y)
+    x%y == 0
+end
+é_divisivel(5,2)
+
+if é_divisivel(21, 3)
+    println("x é divisível por y")
+end
+
+function fat(n)
+    espaço = " " ^ (4 * n)
+    println(espaço, "fatorial ", n)
+    if n==0
+        return 1
+    else
+        recursão = fat(n-1)
+        resultado = n * recursão
+        println(espaço, "retornando ", resultado)
+        return resultado
+    end
+end
+fat(4)
+
+function fib(n)
+    if !(n isa Int64)
+        error("Fatorial é definido somente para números inteiros.")
+    elseif n<0
+        error("Fatorial não é definido para números inteiros negativos.")
+    elseif n==0
+        return 0
+    elseif n==1
+        return 1
+    else
+        return fib(n-1)+fib(n-2)
+    end
+end
+fib(1.5)
+
+function A(m, n)
+    if m==0
+        return n+1
+    elseif m>0 && n==0
+        return A(m-1,1)
+    else
+        return A(m-1,A(m,n-1))
+    end
+end
+A(3,4)
