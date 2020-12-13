@@ -256,3 +256,95 @@ function A(m, n)
     end
 end
 A(3,4)
+
+function bhaskara(a,b,c)
+    Δ = b^2 - 4a*c
+    x₁ = (-b + √Δ) / 2a
+    x₂ = (-b - √Δ) / 2a
+    return [x₁,x₂]
+end
+println(bhaskara(3,4,2))
+
+
+#y=1/2*(x+a/x) #metodo de Newton sqrt
+a, x = 4, 3
+y = (x + a/x) / 2
+x = y
+y = (x + a/x) / 2
+x = y
+y = (x + a/x) / 2
+x = y
+y = (x + a/x) / 2
+x = y
+y = (x + a/x) / 2
+x = y
+y = (x + a/x) / 2
+# resultado parou de mudar, y == x.
+while true
+    println(x)
+    y = (x + a/x) / 2
+    if abs(y-x) < eps()
+        break
+    end
+    x = y
+end
+
+#Conjectura de Collatz
+function collatz(n)
+    while n != 1
+        println(n)
+        if n % 2 == 0
+            n = n/2
+        else
+            n = 3n + 1
+        end
+    end
+end
+collatz(77031)
+
+#exercicio 7-2
+function minha_raiz(a)
+    x = a>1 ? a-1 : a
+    while true
+        y = (x + a/x) / 2
+        if abs(y-x) < eps()
+            return y
+            break
+        end
+        x = y
+    end
+
+end
+function avalia_raiz_quadrada()
+    println("a   mysqrt             sqrt               diff")
+    println("-   ------             ----               ----")
+    for i in 1.0:9.0
+        raiz_f, raiz_my = sqrt(i), minha_raiz(i)
+        println(i, raiz_my, raiz_f,abs(raiz_f-raiz_my))
+        #print(raiz_my)
+        #print(raiz_f)
+        #println(abs(raiz_f-raiz_my))
+    end
+end
+avalia_raiz_quadrada()
+
+
+exp = Meta.parse("1+2*3")
+eval(exp)
+
+function estima_pi() #FAIL
+    a = (2*√2)/9801
+    k = 0
+    um_sopi = 0
+    while true
+        um_sopi += (factorial(4big(k))*(1103+2690*k)) / (((factorial(k))^4) * (396^(4*k)))
+        println(a*um_sopi)
+        println(k)
+        if abs(π-(a*um_sopi)) <= 1e-15
+            println("Hm...")
+            return a * um_sopi
+        end
+        k += 1
+    end
+end
+println(estima_pi()) #something it's wrongs
