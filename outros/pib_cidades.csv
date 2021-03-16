@@ -1,7 +1,4 @@
-﻿"Tabela 5938 - Produto interno bruto a preços correntes, impostos, líquidos de subsídios, sobre produtos a preços correntes e valor adicionado bruto a preços correntes total e por atividade econômica, e respectivas participações - Referência 2010"
-"Variável - Produto Interno Bruto a preços correntes (Mil Reais)"
-"Nível","Cód.","Brasil, Grande Região, Unidade da Federação, Município, Mesorregião Geográfica e Microrregião Geográfica","Ano"
-"Nível","Cód.","Brasil, Grande Região, Unidade da Federação, Município, Mesorregião Geográfica e Microrregião Geográfica","2017","2018"
+﻿"Nível","Cód.","Brasil, Grande Região, Unidade da Federação, Município, Mesorregião Geográfica e Microrregião Geográfica","2017","2018"
 "BR","1","Brasil","6585479000.016","7004140999.992"
 "GR","1","Norte","367956432.256","387535315.653"
 "GR","2","Nordeste","953428747.078","1004827439.631"
@@ -25212,25 +25209,3 @@
 "MI","52017","Catalão (GO)","3519831","3161186"
 "MI","52018","Quirinópolis (GO)","2269536","1264245"
 "MI","53001","Brasília (DF)","8448768","9541298"
-"Fonte: IBGE, em parceria com os &Oacute;rg&atilde;os Estaduais de Estat&iacute;stica, Secretarias Estaduais de Governo e Superintend&ecirc;ncia da Zona Franca de Manaus - SUFRAMA"
-
-"Notas"
-"1 - Os dados do último ano disponível estarão sujeitos a revisão quando da próxima divulgação.
-2 - Os dados da série retropolada (de 2002 a 2009) também têm como referência o ano de 2010, seguindo a nova referência das Contas Nacionais."
-""
-"Legenda"
-"Símbolo","Significado"
-"-","Zero absoluto, não resultante de um cálculo ou arredondamento.
-Ex: Em determinado município não existem pessoas de 14 anos de idade sem instrução."
-"0","Zero resultante de um cálculo ou arredondamento.
-Ex: A inflação do feijão em determinada Região Metropolitana foi 0.
-Determinado município produziu 400 kg de sementes de girassol e os dados da tabela são expressos em toneladas."
-"X","Valor inibido para não identificar o informante.
-Ex: Determinado município só possui uma empresa produtora de cimento, logo o valor de sua produção deve ser inibido."
-"..","Valor não se aplica.
-Ex: Não se pode obter o total da produção agrícola em determinado município quando os produtos agrícolas são contabilizados com unidades de medida distintas."
-"...","Valor não disponível.
-Ex: A produção de feijão em determinado município não foi pesquisada ou determinado município não existia no ano da pesquisa."
-"A a Z
-(exceto X)","Significa uma faixa de valores. Varia em função da tabela (se for o caso).
-Ex: O nível de precisão da produção estimada de combustíveis está na faixa A (95 a 100%)"
