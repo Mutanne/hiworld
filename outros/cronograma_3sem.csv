@@ -6,8 +6,8 @@ Fórum,Engenharia de Software,1,Fórum,08/02/2021,01/03/2021
 Ta4,Engenharia de Software,4,Teleaula,06/03/2021,09/07/2021
 Av1,Engenharia de Software,2,Avaliação Virtual,08/02/2021,08/03/2021
 Av2,Engenharia de Software,4,Avaliação Virtual,08/02/2021,15/03/2021
-Substitutiva 1 ,Engenharia de Software,2,Avaliação Virtual,31/05/2021,05/06/2021
-Substitutiva 2,Engenharia de Software,4,Avaliação Virtual,31/05/2021,05/06/2021
+Subst1 ,Engenharia de Software,2,Avaliação Virtual,31/05/2021,05/06/2021
+Subst2,Engenharia de Software,4,Avaliação Virtual,31/05/2021,05/06/2021
 Aap1,Engenharia de Software,1,Atividade de Aprendizagem,08/02/2021,12/06/2021
 Aap2,Engenharia de Software,2,Atividade de Aprendizagem,15/02/2021,12/06/2021
 Aap3,Engenharia de Software,3,Atividade de Aprendizagem,22/02/2021,12/06/2021
@@ -20,7 +20,7 @@ Cw1,Engenharia de Software,1,Conteúdo Web,08/02/2021,26/06/2021
 Cw2,Engenharia de Software,2,Conteúdo Web,08/02/2021,26/06/2021
 Cw3,Engenharia de Software,3,Conteúdo Web,08/02/2021,26/06/2021
 Cw4,Engenharia de Software,4,Conteúdo Web,08/02/2021,26/06/2021
-Prova Presencial,Engenharia de Software,4,Prova Presencial,08/03/2021,13/03/2021
+PP,Engenharia de Software,4,Prova Presencial,08/03/2021,13/03/2021
 2º Chamada,Engenharia de Software,4,Prova Presencial,19/06/2021,19/06/2021
 Recuperação,Engenharia de Software,4,Prova Presencial,26/06/2021,26/06/2021
 Leitura,Engenharia de Software,1,Leitura,08/02/2021,26/06/2021
@@ -31,8 +31,8 @@ Fórum,Redes e Sistemas Distribuídos,1,Fórum,08/03/2021,29/03/2021
 Ta4,Redes e Sistemas Distribuídos,4,Teleaula,03/04/2021,09/07/2021
 Av1,Redes e Sistemas Distribuídos,2,Avaliação Virtual,01/03/2021,05/04/2021
 Av2,Redes e Sistemas Distribuídos,4,Avaliação Virtual,01/03/2021,12/04/2021
-Substitutiva 1 ,Redes e Sistemas Distribuídos,2,Avaliação Virtual,31/05/2021,05/06/2021
-Substitutiva 2,Redes e Sistemas Distribuídos,4,Avaliação Virtual,31/05/2021,05/06/2021
+Subst1 ,Redes e Sistemas Distribuídos,2,Avaliação Virtual,31/05/2021,05/06/2021
+Subst2,Redes e Sistemas Distribuídos,4,Avaliação Virtual,31/05/2021,05/06/2021
 Aap1,Redes e Sistemas Distribuídos,1,Atividade de Aprendizagem,08/03/2021,12/06/2021
 Aap2,Redes e Sistemas Distribuídos,2,Atividade de Aprendizagem,15/03/2021,12/06/2021
 Aap3,Redes e Sistemas Distribuídos,3,Atividade de Aprendizagem,22/03/2021,12/06/2021
@@ -45,7 +45,7 @@ Cw1,Redes e Sistemas Distribuídos,1,Conteúdo Web,01/03/2021,26/06/2021
 Cw2,Redes e Sistemas Distribuídos,2,Conteúdo Web,01/03/2021,26/06/2021
 Cw3,Redes e Sistemas Distribuídos,3,Conteúdo Web,01/03/2021,26/06/2021
 Cw4,Redes e Sistemas Distribuídos,4,Conteúdo Web,01/03/2021,26/06/2021
-Prova Presencial,Redes e Sistemas Distribuídos,4,Prova Presencial,05/04/2021,10/04/2021
+PP,Redes e Sistemas Distribuídos,4,Prova Presencial,05/04/2021,10/04/2021
 2º Chamada,Redes e Sistemas Distribuídos,4,Prova Presencial,19/06/2021,19/06/2021
 Recuperação,Redes e Sistemas Distribuídos,4,Prova Presencial,26/06/2021,26/06/2021
 Leitura,Redes e Sistemas Distribuídos,1,Leitura,01/03/2021,26/06/2021
@@ -56,8 +56,8 @@ Fórum,Programação Web,1,Fórum,05/04/2021,26/04/2021
 Ta4,Programação Web,4,Teleaula,01/05/2021,09/07/2021
 Av1,Programação Web,2,Avaliação Virtual,22/03/2021,03/05/2021
 Av2,Programação Web,4,Avaliação Virtual,22/03/2021,10/05/2021
-Substitutiva 1 ,Programação Web,2,Avaliação Virtual,31/05/2021,05/06/2021
-Substitutiva 2,Programação Web,4,Avaliação Virtual,31/05/2021,05/06/2021
+Subst1 ,Programação Web,2,Avaliação Virtual,31/05/2021,05/06/2021
+Subst2,Programação Web,4,Avaliação Virtual,31/05/2021,05/06/2021
 Aap1,Programação Web,1,Atividade de Aprendizagem,05/04/2021,12/06/2021
 Aap2,Programação Web,2,Atividade de Aprendizagem,12/04/2021,12/06/2021
 Aap3,Programação Web,3,Atividade de Aprendizagem,19/04/2021,12/06/2021
@@ -70,7 +70,7 @@ Cw1,Programação Web,1,Conteúdo Web,22/03/2021,26/06/2021
 Cw2,Programação Web,2,Conteúdo Web,22/03/2021,26/06/2021
 Cw3,Programação Web,3,Conteúdo Web,22/03/2021,26/06/2021
 Cw4,Programação Web,4,Conteúdo Web,22/03/2021,26/06/2021
-Prova Presencial,Programação Web,4,Prova Presencial,03/05/2021,08/05/2021
+PP,Programação Web,4,Prova Presencial,03/05/2021,08/05/2021
 2º Chamada,Programação Web,4,Prova Presencial,19/06/2021,19/06/2021
 Recuperação,Programação Web,4,Prova Presencial,26/06/2021,26/06/2021
 Leitura,Programação Web,1,Leitura,22/03/2021,26/06/2021
@@ -81,8 +81,8 @@ Ta4,Optativa I,1,Teleaula,06/03/2021,09/07/2021
 Fórum,Optativa I,4,Fórum,08/02/2021,26/04/2021
 Av1,Optativa I,2,Avaliação Virtual,08/02/2021,24/05/2021
 Av2,Optativa I,4,Avaliação Virtual,08/02/2021,31/05/2021
-Substitutiva 1 ,Optativa I,2,Avaliação Virtual,31/05/2021,05/06/2021
-Substitutiva 2,Optativa I,4,Avaliação Virtual,31/05/2021,05/06/2021
+Subst1 ,Optativa I,2,Avaliação Virtual,31/05/2021,05/06/2021
+Subst2,Optativa I,4,Avaliação Virtual,31/05/2021,05/06/2021
 Aap1,Optativa I,1,Atividade de Aprendizagem,08/02/2021,12/06/2021
 Aap2,Optativa I,2,Atividade de Aprendizagem,15/02/2021,12/06/2021
 Aap3,Optativa I,3,Atividade de Aprendizagem,22/02/2021,12/06/2021
@@ -95,7 +95,7 @@ Cw1,Optativa I,1,Conteúdo Web,08/02/2021,26/06/2021
 Cw2,Optativa I,2,Conteúdo Web,08/02/2021,26/06/2021
 Cw3,Optativa I,3,Conteúdo Web,08/02/2021,26/06/2021
 Cw4,Optativa I,4,Conteúdo Web,08/02/2021,26/06/2021
-Prova Presencial,Optativa I,4,Prova Presencial,24/05/2021,29/05/2021
+PP,Optativa I,4,Prova Presencial,24/05/2021,29/05/2021
 2º Chamada,Optativa I,4,Prova Presencial,19/06/2021,19/06/2021
 Recuperação,Optativa I,4,Prova Presencial,26/06/2021,26/06/2021
 Leitura,Optativa I,1,Leitura,08/02/2021,26/06/2021
@@ -106,8 +106,8 @@ Fórum,Desenvolvimento Mobile,1,Fórum,03/05/2021,24/05/2021
 Ta4,Desenvolvimento Mobile,4,Teleaula,29/05/2021,12/06/2021
 Av1,Desenvolvimento Mobile,2,Avaliação Virtual,12/04/2021,31/05/2021
 Av2,Desenvolvimento Mobile,4,Avaliação Virtual,12/04/2021,31/05/2021
-Substitutiva 1 ,Desenvolvimento Mobile,2,Avaliação Virtual,31/05/2021,05/06/2021
-Substitutiva 2,Desenvolvimento Mobile,4,Avaliação Virtual,31/05/2021,05/06/2021
+Subst1 ,Desenvolvimento Mobile,2,Avaliação Virtual,31/05/2021,05/06/2021
+Subst2,Desenvolvimento Mobile,4,Avaliação Virtual,31/05/2021,05/06/2021
 Aap1,Desenvolvimento Mobile,1,Atividade de Aprendizagem,03/05/2021,12/06/2021
 Aap2,Desenvolvimento Mobile,2,Atividade de Aprendizagem,10/05/2021,12/06/2021
 Aap3,Desenvolvimento Mobile,3,Atividade de Aprendizagem,17/05/2021,12/06/2021
@@ -120,7 +120,7 @@ Cw1,Desenvolvimento Mobile,1,Conteúdo Web,12/04/2021,26/06/2021
 Cw2,Desenvolvimento Mobile,2,Conteúdo Web,12/04/2021,26/06/2021
 Cw3,Desenvolvimento Mobile,3,Conteúdo Web,12/04/2021,26/06/2021
 Cw4,Desenvolvimento Mobile,4,Conteúdo Web,12/04/2021,26/06/2021
-Prova Presencial,Desenvolvimento Mobile,4,Prova Presencial,07/06/2021,12/06/2021
+PP,Desenvolvimento Mobile,4,Prova Presencial,07/06/2021,12/06/2021
 2º Chamada,Desenvolvimento Mobile,4,Prova Presencial,14/06/2021,19/06/2021
 Recuperação,Desenvolvimento Mobile,4,Prova Presencial,21/06/2021,26/06/2021
 Leitura,Desenvolvimento Mobile,1,Leitura,12/04/2021,26/06/2021
